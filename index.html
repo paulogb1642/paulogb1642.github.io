@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ley de los Gases</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Ley de los Gases</h1>
+    </header>
+    <div class="container">
+        <section class="calculator">
+            <h2>Calculadora de Ley de los Gases</h2>
+            <form id="gasLawForm">
+                <div class="form-group">
+                    <label for="pressure">Presión (P):</label>
+                    <input type="number" id="pressure" step="any" placeholder="Ingrese la presión" required>
+                    <select id="pressureUnit">
+                        <option value="atm">atm</option>
+                        <option value="mmHg">mmHg</option>
+                        <option value="kPa">kPa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="volume">Volumen (V):</label>
+                    <input type="number" id="volume" step="any" placeholder="Ingrese el volumen" required>
+                    <select id="volumeUnit">
+                        <option value="L">Litros</option>
+                        <option value="mL">Mililitros</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="temperature">Temperatura (T):</label>
+                    <input type="number" id="temperature" step="any" placeholder="Ingrese la temperatura" required>
+                    <select id="temperatureUnit">
+                        <option value="K">Kelvin</option>
+                        <option value="°C">Celsius</option>
+                    </select>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+            <div class="result" id="resultSection">
+                <h3>Resultado:</h3>
+                <p id="resultExplanation">Introduce los valores y haz clic en Calcular para ver el resultado.</p>
+            </div>
+        </section>
+
+        <section class="laws-of-gases">
+            <h2>Leyes de los Gases</h2>
+            <select id="gasLawSelect" onchange="updateGasLawDescription()">
+                <option value="boyle">Ley de Boyle-Mariotte (Ley de Boyle)</option>
+                <option value="charles">Ley de Charles</option>
+                <option value="gay-lussac">Ley de Gay-Lussac</option>
+                <option value="avogadro">Ley de los Gases Ideales (Ley de Avogadro)</option>
+            </select>
+            <div id="gasLawDescription">
+                <h3>Ley de Boyle-Mariotte (Ley de Boyle):</h3>
+                <p>La ley de Boyle establece que, a temperatura constante, el volumen de una cantidad fija de gas es inversamente proporcional a la presión a la que se encuentra el gas.</p>
+                <p><strong>Glosario:</strong> La presión y el volumen de un gas son inversamente proporcionales cuando la temperatura se mantiene constante. Esto significa que si aumenta la presión, el volumen disminuirá, y viceversa.</p>
+            </div>
+        </section>
+
+        <section class="chemistry-info">
+            <h2>Química en el Día a Día</h2>
+            <p>La química juega un papel fundamental en muchos aspectos de nuestra vida cotidiana, desde la cocina hasta la medicina y el medio ambiente.</p>
+            <p>Descubre cómo los principios químicos se aplican en situaciones reales y cómo pueden mejorar nuestra comprensión del mundo que nos rodea.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Calculadora de Ley de los Gases. 
+credo por Ingenieria en logistca,Quimica,seccion2,By_
+Alumnos: 
+Paulo Garcia_
+Felix Henriquez_
+Paola Muñoz_
+Jose Diaz
+.Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+

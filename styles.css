@@ -1,0 +1,114 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+.calculator {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.calculator .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.calculator label {
+    width: 30%;
+    font-weight: bold;
+}
+
+.calculator input[type="number"], .calculator select {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.calculator button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.calculator button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.laws-of-gases {
+    margin-top: 30px;
+}
+
+.laws-of-gases select {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.laws-of-gases h3 {
+    margin-top: 20px;
+}
+
+.laws-of-gases p strong {
+    font-weight: bold;
+}
+
+.chemistry-info {
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+
